@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "659451c6-dd9c-43e8-a261-d224068ec3b8",
+		"name": "Person",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/person",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/person",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/person/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Person[name]",
+							"value": "Dinaerte xsa ",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Person[last_name]",
+							"value": "Neto",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Person[date_birth]",
+							"value": "1985-07-15",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Contact[0][type]",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Contact[0][value]",
+							"value": "dinaerteneto@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Contact[1][type]",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Contact[1][value]",
+							"value": "1126191662",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/person/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/person/update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Person[name]",
+							"value": "teste",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Person[last_name]",
+							"value": "teste lastname",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Person[date_birth]",
+							"value": "2015-06-12",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Contact[2][type]",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Contact[2][value]",
+							"value": "elias@appciee.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Contact[3][type]",
+							"value": "4",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Contact[3][value]",
+							"value": "1111111111111",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/person/7/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person",
+						"7",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/person/7/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/person/7/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person",
+						"7",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
